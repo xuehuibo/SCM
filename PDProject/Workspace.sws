@@ -4,7 +4,7 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{F6A5B867-9125-4E79-A4F6-EEAFB1FDE225}" Name="SCMDB" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="SCMDB.pdm"/>
+		<Model ID="{F6A5B867-9125-4E79-A4F6-EEAFB1FDE225}" Name="SCMDB" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="SCMDB.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>
