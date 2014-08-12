@@ -6,22 +6,19 @@ using System.Web.Mvc;
 
 namespace SCM.Controllers
 {
-    /// <summary>
-    /// 零售商PageController
-    /// </summary>
-    public class RetailerController : Controller
+    public class HomeController : Controller
     {
         //
-        // GET: /Retailer/
+        // GET: /Home/
 
         public ActionResult Index()
         {
             return View();
         }
 
-        //public PartialViewResult Signin()
-        //{
-
-        //}
+        public RedirectResult Rd()
+        {
+            return Redirect("/Retailer");
+        }
     }
 }

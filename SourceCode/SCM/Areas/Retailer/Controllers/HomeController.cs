@@ -4,19 +4,21 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace SCM.Controllers
+namespace SCM.Areas.Retailer.Controllers
 {
-    /// <summary>
-    /// 供应商PageController
-    /// </summary>
-    public class SupplierController : Controller
+    public class HomeController : Controller
     {
         //
-        // GET: /Supplier/
+        // GET: /Retailer/Home/
 
         public ActionResult Index()
         {
             return View();
+        }
+
+        public RedirectResult Rd()
+        {
+            return Redirect("/Supplier");
         }
 
     }

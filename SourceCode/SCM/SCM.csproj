@@ -133,8 +133,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\RetailerController.cs" />
-    <Compile Include="Controllers\SupplierController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\SigninController.cs" />
+    <Compile Include="Areas\Retailer\RetailerAreaRegistration.cs" />
+    <Compile Include="Areas\Supplier\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Supplier\SupplierAreaRegistration.cs" />
+    <Compile Include="Attributes\AuthorizationAttribute.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -178,10 +183,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -198,16 +199,34 @@
     <Content Include="Content\less\datetimepicker.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Retailer\Index.cshtml" />
+    <Content Include="Areas\Retailer\Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Supplier\Index.cshtml" />
+    <Content Include="Areas\Supplier\Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Supplier\Signin.cshtml" />
+    <Content Include="Areas\Retailer\Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Retailer\Signin.cshtml" />
+    <Content Include="Areas\Supplier\Views\Sigin\Signin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Retailer\Views\Signin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Supplier\Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
