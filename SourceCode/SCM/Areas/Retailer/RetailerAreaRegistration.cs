@@ -15,9 +15,9 @@ namespace SCM.Areas.Retailer
         public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                "Retailer_default",
+                "Retailer",
                 "Retailer/{controller}/{action}/{id}",
-                new { controller="Home", action = "Index", id = UrlParameter.Optional },
+                new { controller="Main", action = "Index", id = UrlParameter.Optional },
                 new string[] { "SCM.Areas.Retailer.Controllers" }
             );
         }

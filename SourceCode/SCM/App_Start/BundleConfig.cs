@@ -22,7 +22,8 @@ namespace SCM
                 ));
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                         "~/Content/css/bootstrap-theme.css",
-                        "~/Content/css/bootstrap.css"
+                        "~/Content/css/bootstrap.css",
+                        "~/Content/css/dashboard.css"
                 ));
             bundles.Add(new StyleBundle("~/bundles/signincss").Include(
                         "~/Content/css/signin.css"

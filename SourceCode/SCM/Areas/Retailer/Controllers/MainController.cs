@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SCM.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,7 +7,8 @@ using System.Web.Mvc;
 
 namespace SCM.Areas.Retailer.Controllers
 {
-    public class HomeController : Controller
+    [Authorization(AuthSaveKey = "Retailer", AuthSaveType = "session", AuthUrl = "/Retailer/Sign/Signin")]
+    public class MainController : Controller
     {
         //
         // GET: /Retailer/Home/
@@ -15,11 +17,5 @@ namespace SCM.Areas.Retailer.Controllers
         {
             return View();
         }
-
-        public RedirectResult Rd()
-        {
-            return Redirect("/Supplier");
-        }
-
     }
 }

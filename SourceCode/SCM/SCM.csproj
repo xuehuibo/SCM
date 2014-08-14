@@ -133,13 +133,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\Retailer\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Retailer\Controllers\SigninController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\MainController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\SignController.cs" />
     <Compile Include="Areas\Retailer\RetailerAreaRegistration.cs" />
-    <Compile Include="Areas\Supplier\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Supplier\Controllers\MainController.cs" />
+    <Compile Include="Areas\Supplier\Controllers\SignController.cs" />
     <Compile Include="Areas\Supplier\SupplierAreaRegistration.cs" />
     <Compile Include="Attributes\AuthorizationAttribute.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\ActionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -152,6 +153,7 @@
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\dashboard.css" />
     <Content Include="Content\css\signin.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\image\bar-chart-60.png" />
@@ -208,7 +210,7 @@
     <Content Include="Areas\Retailer\Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Supplier\Views\Sigin\Signin.cshtml" />
+    <Content Include="Areas\Supplier\Views\Sign\Signin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\_ViewStart.cshtml" />
@@ -220,10 +222,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Retailer\Views\Signin\Index.cshtml" />
+    <Content Include="Areas\Retailer\Views\Sign\Signin.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Supplier\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Supplier\Views\Main\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />

@@ -15,9 +15,9 @@ namespace SCM.Areas.Supplier
         public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                "Supplier_default",
+                "Supplier",
                 "Supplier/{controller}/{action}/{id}",
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                new { controller = "Main", action = "Index", id = UrlParameter.Optional },
                 new string[] { "SCM.Areas.Supplier.Controllers" }
             );
         }
