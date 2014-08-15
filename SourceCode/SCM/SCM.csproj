@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -20,6 +21,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -134,7 +136,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Retailer\Controllers\MainController.cs" />
-    <Compile Include="Areas\Retailer\Controllers\SignController.cs" />
     <Compile Include="Areas\Retailer\RetailerAreaRegistration.cs" />
     <Compile Include="Areas\Supplier\Controllers\MainController.cs" />
     <Compile Include="Areas\Supplier\Controllers\SignController.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Supplier\Scripts\SCM.Supplier.Main.js" />
     <Content Include="Content\css\bootstrap-datetimepicker.css" />
     <Content Include="Content\css\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\css\bootstrap-theme.css" />
@@ -154,15 +156,71 @@
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\dashboard.css" />
-    <Content Include="Content\css\signin.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\image\bar-chart-60.png" />
-    <Content Include="Content\image\database-60.png" />
-    <Content Include="Content\image\key-60.png" />
-    <Content Include="Content\image\settings-60.png" />
-    <Content Include="Content\image\user-60.png" />
-    <Content Include="Content\image\user-add-60.png" />
-    <Content Include="Content\image\user-remove-60.png" />
+    <Content Include="Content\image\add-60-styled.png" />
+    <Content Include="Content\image\attention-60-styled.png" />
+    <Content Include="Content\image\bar-chart-60-styled.png" />
+    <Content Include="Content\image\book-60-styled.png" />
+    <Content Include="Content\image\breafcase-60-styled.png" />
+    <Content Include="Content\image\bulb-off-60-styled.png" />
+    <Content Include="Content\image\bulb-on-60-styled.png" />
+    <Content Include="Content\image\check-60-styled.png" />
+    <Content Include="Content\image\clipboard-60-styled.png" />
+    <Content Include="Content\image\cloud-60-styled.png" />
+    <Content Include="Content\image\comment-60-styled.png" />
+    <Content Include="Content\image\comment-add-60-styled.png" />
+    <Content Include="Content\image\comment-remove-60-styled.png" />
+    <Content Include="Content\image\comments-60-styled.png" />
+    <Content Include="Content\image\cut-60-styled.png" />
+    <Content Include="Content\image\database-60-styled.png" />
+    <Content Include="Content\image\document-60-styled.png" />
+    <Content Include="Content\image\documents-60-styled.png" />
+    <Content Include="Content\image\error-60-styled.png" />
+    <Content Include="Content\image\favorite-60-styled.png" />
+    <Content Include="Content\image\favorite-add-60-styled.png" />
+    <Content Include="Content\image\favorite-remove--60-styled.png" />
+    <Content Include="Content\image\flag-60-styled.png" />
+    <Content Include="Content\image\folder-60-styled.png" />
+    <Content Include="Content\image\folder-add-60-styled.png" />
+    <Content Include="Content\image\folder-remove-60-styled.png" />
+    <Content Include="Content\image\forward-60-styled.png" />
+    <Content Include="Content\image\half-rating-60-styled.png" />
+    <Content Include="Content\image\home-60-styled.png" />
+    <Content Include="Content\image\image-60-styled.png" />
+    <Content Include="Content\image\info-60-styled.png" />
+    <Content Include="Content\image\key-60-styled.png" />
+    <Content Include="Content\image\lock-60-styled.png" />
+    <Content Include="Content\image\move-60-styled.png" />
+    <Content Include="Content\image\music-60-styled.png" />
+    <Content Include="Content\image\next-60-styled.png" />
+    <Content Include="Content\image\no-rating-60-styled.png" />
+    <Content Include="Content\image\pause-60-styled.png" />
+    <Content Include="Content\image\pencil-60-styled.png" />
+    <Content Include="Content\image\pie-chart-60-styled.png" />
+    <Content Include="Content\image\play-60-styled.png" />
+    <Content Include="Content\image\preferences-60-styled.png" />
+    <Content Include="Content\image\presentation-60-styled.png" />
+    <Content Include="Content\image\previous-60-styled.png" />
+    <Content Include="Content\image\print-60-styled.png" />
+    <Content Include="Content\image\rating-60-styled.png" />
+    <Content Include="Content\image\rec-60-styled.png" />
+    <Content Include="Content\image\remove-60-styled.png" />
+    <Content Include="Content\image\rewind-60-styled.png" />
+    <Content Include="Content\image\search-60-styled.png" />
+    <Content Include="Content\image\settings-60-styled.png" />
+    <Content Include="Content\image\shopping-cart-60-styled.png" />
+    <Content Include="Content\image\shopping-cart-add-60-styled.png" />
+    <Content Include="Content\image\shopping-cart-remove-60-styled.png" />
+    <Content Include="Content\image\stop-60-styled.png" />
+    <Content Include="Content\image\uncheck-60-styled.png" />
+    <Content Include="Content\image\unlock-60-styled.png" />
+    <Content Include="Content\image\update-60-styled.png" />
+    <Content Include="Content\image\user-60-styled.png" />
+    <Content Include="Content\image\user-add-60-styled.png" />
+    <Content Include="Content\image\user-remove-60-styled.png" />
+    <Content Include="Content\image\video-60-styled.png" />
+    <Content Include="Content\image\wallet-60-styled.png" />
+    <Content Include="Content\image\watch-60-styled.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Backbone\backbone-min.js" />
     <Content Include="Scripts\Backbone\backbone.js" />
@@ -173,11 +231,9 @@
     <Content Include="Scripts\Bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\JQuery\jquery-1.11.1.js" />
     <Content Include="Scripts\JQuery\jquery-1.11.1.min.js" />
-    <Content Include="Scripts\Routers\RTLRouter.js" />
-    <Content Include="Scripts\Routers\SUPRouter.js" />
-    <Content Include="Scripts\Tools.js" />
     <Content Include="Scripts\Underscore\underscore-min.js" />
     <Content Include="Scripts\Underscore\underscore.js" />
+    <Content Include="Scripts\UserDefine\NameSpaceReg.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -188,6 +244,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Retailer\Scripts\" />
+    <Folder Include="Areas\Retailer\Templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -222,9 +280,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Retailer\Views\Sign\Signin.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Areas\Supplier\Views\Main\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +290,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
