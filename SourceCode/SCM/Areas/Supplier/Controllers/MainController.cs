@@ -12,11 +12,9 @@ namespace SCM.Areas.Supplier.Controllers
     {
         //
         // GET: /Supplier/Home/
-        
         public ViewResult Index()
         {
             return View();
         }
-
     }
 }

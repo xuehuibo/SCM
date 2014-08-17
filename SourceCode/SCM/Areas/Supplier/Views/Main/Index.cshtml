@@ -14,7 +14,7 @@
     <a class="hide" href="#"><small>忘记密码？</small></a>
 </script>
 
-<script id="temp_NavbarUserPanelView" type="text/template">
+<script id="temp_NavbarSupplierPanelView" type="text/template">
     <div class="form-group">
         <h5> <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="欢迎您，1级供应商"><span class="glyphicon glyphicon-user"></span>xxxx有限公司</a><span class="badge">Lv 1</span></h5>
     </div>
@@ -34,112 +34,110 @@
 
 <script type="text/javascript" src="~/Areas/Supplier/Scripts/SCM.Supplier.Main.js"></script>
 
-<div id="navbar" class="navbar-wrapper">
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button" >
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="回到首页">@ViewBag.Title <small>——供应商平台</small></a>
-                </div>
-                <div id="infoPanel" class="navbar-collapse collapse">
-                </div>
-            </div>
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="回到首页">@ViewBag.Title <small>——供应商平台</small></a>
+        </div>
+        <div id="infoPanel" class="navbar-collapse collapse">
         </div>
     </div>
 </div>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-        <li data-slide-to="1" data-target="#myCarousel"></li>
-        <li data-slide-to="2" data-target="#myCarousel"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>公告.1</h1>
-                    <p>这里是公告面板。零售商向供应商发布公共消息。</p>
-                    <p>所有供应商都可以查看</p>
-                    <p><a role="button" href="#" class="btn btn-primary btn-lg">点击查看</a></p>
+<div id="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>公告.1</h1>
+                        <p>这里是公告面板。零售商向供应商发布公共消息。</p>
+                        <p>所有供应商都可以查看</p>
+                        <p><a role="button" href="/Supplier/Main/Test" class="btn btn-primary btn-lg">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>公告.2</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a role="button" href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>公告.3</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a role="button" href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="item">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>公告.2</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a role="button" href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>公告.3</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a role="button" href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
-                </div>
-            </div>
-        </div>
+        <a class="left carousel-control" data-slide="prev" role="button" href="#myCarousel">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="right carousel-control" data-slide="next" role="button" href="#myCarousel">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only"></span>
+        </a>
     </div>
-    <a class="left carousel-control" data-slide="prev" role="button" href="#myCarousel">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only"></span>
-    </a>
-    <a class="right carousel-control" data-slide="next" role="button" href="#myCarousel">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only"></span>
-    </a>
-</div>
 
-<div class="container marketing">
-    <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/info-60-styled.png" />
-            <h2>企业信息</h2>
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/info-60-styled.png" />
+                <h2>企业信息</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/add-60-styled.png" />
+                <h2>新品发布</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/document-60-styled.png" />
+                <h2>产品报价</h2>
+            </div>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/add-60-styled.png" />
-            <h2>新品发布</h2>
+        <hr class="featurette-divider" />
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/watch-60-styled.png" />
+                <h2>订单请求</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/play-60-styled.png" />
+                <h2>发货</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/rec-60-styled.png" />
+                <h2>退货</h2>
+            </div>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/document-60-styled.png" />
-            <h2>产品报价</h2>
+        <hr class="featurette-divider" />
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/clipboard-60-styled.png" />
+                <h2>对账</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/search-60-styled.png" />
+                <h2>单据查询</h2>
+            </div>
         </div>
+        <hr class="featurette-divider" />
     </div>
-    <hr class="featurette-divider" />
-    <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/watch-60-styled.png" />
-            <h2>订单请求</h2>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/play-60-styled.png" />
-            <h2>发货</h2>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/rec-60-styled.png" />
-            <h2>退货</h2>
-        </div>
-    </div>
-    <hr class="featurette-divider" />
-    <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/clipboard-60-styled.png" />
-            <h2>对账</h2>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/search-60-styled.png" />
-            <h2>单据查询</h2>
-        </div>
-    </div>
-    <hr class="featurette-divider" />
 </div>

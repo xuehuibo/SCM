@@ -10,7 +10,7 @@ namespace Models
     /// </summary>
     public class Supplier
     {
-        public Int32 ID
+        public int ID
         {
             get;
             set;
