@@ -7,8 +7,8 @@ using System.Web.Mvc;
 
 namespace SCM.Areas.Retailer.Controllers
 {
-    [Authorization(AuthSaveKey = "Retailer", AuthSaveType = "session", AuthUrl = "/Retailer/Sign/Signin")]
-    public class MainController : Controller
+/*    [Authorization(AuthSaveKey = "Retailer", AuthSaveType = "session", AuthUrl = "/Retailer/Sign/Signin")]*/
+    public class HomeController : Controller
     {
         //
         // GET: /Retailer/Home/
