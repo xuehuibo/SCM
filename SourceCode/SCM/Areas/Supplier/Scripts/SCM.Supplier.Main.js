@@ -1,33 +1,9 @@
 ﻿//Namespace
 Namespace.register("SCM.Supplier.Main");
-//NavbarSigninView
-SCM.Supplier.Main.NavbarSigninView = Backbone.View.extend({
-    tagName: "form",
-    className: "navbar-form navbar-right",
-    attribute: {
-        role:"form"
-    },
-    template: _.template($("#temp_NavbarSigninView").html()),
-    render: function () {
-        this.$el.html(this.template());
-        this.$el.attr("role", "form");
-        this.$el.find(".hasToolTip").tooltip();
-        return this.el;
-    },
-    remove: function () {
-        this.remove;
-    },
-    events: {
-        "register":"register"    
-    },
-    register: function() {
-        
-    }
-});
 //NavbarUserPanelView
 SCM.Supplier.Main.NavbaSupplierPanelView = Backbone.View.extend({
-    tagName: "form",
-    className: "navbar-form navbar-right",
+    tagName: "ul",
+    className: "nav navbar-nav navbar-right",
     initialize:function(supplier) {
         this.model = supplier;
     },
@@ -47,7 +23,7 @@ SCM.Supplier.Main.NavbarView = Backbone.View.extend({
         this.render();
     },
     render: function () {
-        this.$el.find("#infoPanel").html(new SCM.Supplier.Main.NavbarSigninView().render());
+        this.$el.find("#infoPanel").html(new SCM.Supplier.Main.NavbaSupplierPanelView().render());
     }
 });
 

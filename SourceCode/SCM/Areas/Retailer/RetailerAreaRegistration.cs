@@ -17,7 +17,7 @@ namespace SCM.Areas.Retailer
             context.MapRoute(
                 "Retailer",
                 "Retailer/{controller}/{action}/{id}",
-                new { controller="Main", action = "Index", id = UrlParameter.Optional },
+                new { controller="Home", action = "Index", id = UrlParameter.Optional },
                 new string[] { "SCM.Areas.Retailer.Controllers" }
             );
         }

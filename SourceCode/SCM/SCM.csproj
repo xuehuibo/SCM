@@ -135,9 +135,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\Retailer\Controllers\MainController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\HomeController.cs" />
     <Compile Include="Areas\Retailer\RetailerAreaRegistration.cs" />
-    <Compile Include="Areas\Supplier\Controllers\MainController.cs" />
+    <Compile Include="Areas\Supplier\Controllers\HomeController.cs" />
     <Compile Include="Areas\Supplier\Controllers\SignController.cs" />
     <Compile Include="Areas\Supplier\SupplierAreaRegistration.cs" />
     <Compile Include="Attributes\AuthorizationAttribute.cs" />
@@ -280,10 +280,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Supplier\Views\Main\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Areas\Supplier\Views\Home\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
