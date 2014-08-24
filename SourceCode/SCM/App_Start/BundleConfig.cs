@@ -36,8 +36,10 @@ namespace SCM
             bundles.Add(new StyleBundle("~/bundles/datetimepickerCss").Include(
                     "~/Content/css/bootstrap-datetimepicker.css"
                 ));
+            bundles.Add(new StyleBundle("~/bundles/signinCss").Include(
+                "~/Content/css/signin.css"
+                ));
             #endregion
-            
             //var lessBundles = new Bundle("~/bundles/less").Include(
             //    "~/Content/less/build_standalone.less",
             //    "~/Content/less/build.less",

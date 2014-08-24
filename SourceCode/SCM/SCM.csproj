@@ -136,6 +136,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Retailer\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\SignController.cs" />
     <Compile Include="Areas\Retailer\RetailerAreaRegistration.cs" />
     <Compile Include="Areas\Supplier\Controllers\HomeController.cs" />
     <Compile Include="Areas\Supplier\Controllers\SignController.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Retailer\Scripts\SCM.Retailer.Main.js" />
     <Content Include="Areas\Supplier\Scripts\SCM.Supplier.Main.js" />
     <Content Include="Content\css\bootstrap-datetimepicker.css" />
     <Content Include="Content\css\bootstrap-datetimepicker.min.css" />
@@ -156,6 +158,7 @@
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\dashboard.css" />
+    <Content Include="Content\css\signin.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\image\add-60-styled.png" />
     <Content Include="Content\image\attention-60-styled.png" />
@@ -207,10 +210,13 @@
     <Content Include="Content\image\remove-60-styled.png" />
     <Content Include="Content\image\rewind-60-styled.png" />
     <Content Include="Content\image\search-60-styled.png" />
+    <Content Include="Content\image\search-icon.png" />
     <Content Include="Content\image\settings-60-styled.png" />
     <Content Include="Content\image\shopping-cart-60-styled.png" />
     <Content Include="Content\image\shopping-cart-add-60-styled.png" />
     <Content Include="Content\image\shopping-cart-remove-60-styled.png" />
+    <Content Include="Content\image\sidebar-search-close.png" />
+    <Content Include="Content\image\sidebar-toggler.jpg" />
     <Content Include="Content\image\stop-60-styled.png" />
     <Content Include="Content\image\uncheck-60-styled.png" />
     <Content Include="Content\image\unlock-60-styled.png" />
@@ -244,7 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Retailer\Scripts\" />
     <Folder Include="Areas\Retailer\Templates\" />
   </ItemGroup>
   <ItemGroup>
@@ -284,6 +289,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Supplier\Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Supplier\Views\Sign\Signup.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Retailer\Views\Sign\Signin.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

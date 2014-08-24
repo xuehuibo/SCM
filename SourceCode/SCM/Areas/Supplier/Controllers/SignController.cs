@@ -14,28 +14,16 @@ namespace SCM.Areas.Supplier.Controllers
         /// 登录
         /// </summary>
         /// <returns></returns>
-        public ActionResult Signin()
+        public ViewResult Signin()
         {
             ViewBag.Title = "供应商登录";
             return View();
         }
 
-        /// <summary>
-        /// 注册
-        /// </summary>
-        /// <returns></returns>
-        public ActionResult SignUp()
+        public ViewResult Signup()
         {
+            ViewBag.Title = "供应商注册";
             return View();
-        }
-
-        /// <summary>
-        /// 注销
-        /// </summary>
-        /// <returns></returns>
-        public EmptyResult SignOff()
-        {
-            return new EmptyResult();
         }
     }
 }

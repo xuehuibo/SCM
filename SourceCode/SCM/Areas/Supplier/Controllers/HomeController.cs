@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace SCM.Areas.Supplier.Controllers
 {
-    //[Authorization(AuthSaveKey="Supplier",AuthSaveType="session",AuthUrl="/Supplier/Sign/Signin")]
+    [Authorization(AuthSaveKey="Supplier",AuthSaveType="cookie",AuthUrl="/Supplier/Sign/Signin")]
     public class HomeController : Controller
     {
         //

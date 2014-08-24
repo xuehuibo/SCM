@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1>企业信息登记</h1>
+    <hr/>
+    <from class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="supName">企业名称</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="supName" type="text" required="required" placeholder="请输入企业名称" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="legalPerson">法人代表</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="legalPerson" type="text" required="required" placeholder="请输入法人代表" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="regcapital">注册资金</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="regcapital" type="text" required="required" placeholder="请输入注册资金" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="bank">开户行</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="bank" type="text" required="required" placeholder="请输入开户行信息" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="contactPerson">联系人</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="contactPerson" type="text" required="required" placeholder="请输入联系人" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="tel">联系电话</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="tel" type="text" required="required" placeholder="请输入联系电话" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="email">邮箱</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="email" type="text" required="required" placeholder="请输入邮箱" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="address">公司地址</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <input id="address" type="text" required="required" placeholder="请输入公司地址" class="form-control" />
+            </div>
+            <span class="text-danger glyphicon glyphicon-asterisk"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2" for="remark">备注</label>
+            <div class="col-xs-offset-1 col-xs-7">
+                <textarea id="remark" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-xs-offset-3">
+                <a class="btn btn-primary">注册</a>
+                <a class="btn btn-danger">返回</a>
+            </div>
+        </div>
+    </from>
+
+</div>

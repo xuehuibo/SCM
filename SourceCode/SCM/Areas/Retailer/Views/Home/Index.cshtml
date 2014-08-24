@@ -1,6 +1,87 @@
 ﻿@{
-    ViewBag.Title = "零售商登录";
+    ViewBag.Title = "SCM 供应链管理系统";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<script id="temp_NavbarRetailerPanelView" type="text/template">
+    <li>
+        <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="欢迎您，xxxx用户"><span class="glyphicon glyphicon-user"></span>xxxxx用户</a>
+    </li>
+    <li>
+        <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="您有1条未读消息">  <span class="glyphicon glyphicon glyphicon-envelope"></span>消息<span class="badge">1</span></a>
+    </li>
+    <li>
+        <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="您有1件需要处理的任务">  <span class="glyphicon glyphicon glyphicon-list-alt"></span>任务<span class="badge">1</span></a>
+    </li>
+    <li class="dropdown">
+            <a class="btn-link" id="dLable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                快速通道
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li>
+                    <a class="btn-link">首页</a>
+                    <a class="btn-link">发布新品</a>
+                </li>
+            </ul>
+    </li>
 
-<h2>Index</h2>
+    <li>
+        <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="退出登录"><span class="glyphicon glyphicon-remove-circle"></span>退出</a>
+    </li>
+</script>
+
+<script type="text/javascript" src="~/Areas/Retailer/Scripts/SCM.Retailer.Main.js"></script>
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="回到首页"> @ViewBag.Title<small>——零售商平台</small></a>
+        </div>
+        <div id="infoPanel" class="navbar-collapse collapse">
+        </div>
+    </div>
+</div>
+
+<div id="container" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" >
+            <ul class="nav nav-sidebar" id="menu">
+                <li>
+                    <a class="btn-link" data-toggle="collapse" data-target="#menu1">店铺维护</a>
+                    <ul id="menu1" class="collapse">
+                        <ol><a class="btn-link">区域划分</a></ol>
+                        <ol><a class="btn-link">店铺信息</a></ol>
+                    </ul>
+                </li>
+                <li>
+                    <a class="btn-link" data-toggle="collapse" data-target="#menu2">产品目录</a>
+                    <ul id="menu2" class="collapse">
+                        <ol><a class="btn-link">区域划分</a></ol>
+                        <ol><a class="btn-link">店铺信息</a></ol>
+                    </ul>
+                </li>
+                <li>
+                    <a class="btn-link">供应商维护</a>
+                </li>
+                <li>
+                    <a class="btn-link">采购管理</a>
+                </li>
+                <li>
+                    <a class="btn-link">单据查询</a>
+                </li>
+                <li>
+                    <a class="btn-link">公告管理</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Dashboard</h1>
+        </div>
+    </div>
+</div>
