@@ -1,9 +1,9 @@
 ﻿require.config({
     paths: {
-        "jquery": "/Scripts/jquery/jquery-1.11.1.min",
-        "backbone": "/Scripts/Backbone/backbone-min",
-        "underscore": "/Scripts/Underscore/underscore-min",
-        'bootstrap': '/Scripts/Bootstrap/bootstrap.min'
+        "jquery": "/Scripts/jquery-1.11.1.min",
+        "backbone": "/Scripts/backbone-min",
+        "underscore": "/Scripts/underscore-min",
+        'bootstrap': '/Scripts/bootstrap.min'
     },
     shim: {
         'underscore': {
@@ -18,6 +18,4 @@
         }
     }
 });
-require(['jquery', 'underscore','bootstrap' ,'backbone'],
-    function($, _, b,Backbone) {
-});
+require(['jquery', 'underscore','bootstrap' ,'backbone']);

@@ -2,7 +2,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Styles.Render("~/bundles/signinCss")
-
 <div class="container" id="signinView">
     <form role="form" class="form-signin">
         <h2 class="form-signin-heading"><span class="glyphicon glyphicon-user"></span>@ViewBag.Title</h2>
@@ -13,4 +12,10 @@
         <a href="#">忘记密码</a>
     </form>
 </div>
-
+<script>
+    require(['/Areas/Retailer/Scripts/Sign/SigninView.js'], function (SigninView) {
+        var signinView = new SigninView({
+            el: "#signinView"
+        });
+    });
+</script>

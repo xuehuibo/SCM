@@ -1,4 +1,4 @@
-﻿define(['backbone'],function(Backbone) {
+﻿define(['jquery','backbone'],function($,Backbone) {
     var signinView = Backbone.View.extend({
         events: {
             "click .btn": function() {

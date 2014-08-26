@@ -2,13 +2,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Styles.Render("~/bundles/signinCss")
-<script>
-    require(['/Areas/Supplier/Scripts/Signin/SigninView.js'], function (SigninView) {
-        var signinView = new SigninView({
-            el: "#signinView"
-        });
-    });
-</script>
+
 <div class="container" id="signinView">
     <form role="form" class="form-signin">
         <h2 class="form-signin-heading"><span class="glyphicon glyphicon-user"></span>@ViewBag.Title</h2>
@@ -20,3 +14,10 @@
     </form>
 </div>
 
+<script>
+    require(['/Areas/Supplier/Scripts/Sign/SigninView.js'], function (SigninView) {
+        var signinView = new SigninView({
+            el: "#signinView"
+        });
+    });
+</script>
