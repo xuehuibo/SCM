@@ -9,7 +9,7 @@ namespace SCM
         public static void RegisterBundles(BundleCollection bundles)
         {
             #region 框架或插件
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            /*bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                          "~/Scripts/JQuery/jquery-{version}.js"));
             bundles.Add(new ScriptBundle("~/bundles/backbone").Include(
                         "~/Scripts/Backbone/backbone.js"
@@ -36,6 +36,7 @@ namespace SCM
             bundles.Add(new StyleBundle("~/bundles/datetimepickerCss").Include(
                     "~/Content/css/bootstrap-datetimepicker.css"
                 ));
+            */
             bundles.Add(new StyleBundle("~/bundles/signinCss").Include(
                 "~/Content/css/signin.css"
                 ));

@@ -4,12 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>@ViewBag.Title</title>
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/underscore")
-        @Scripts.Render("~/bundles/backbone")
-        @Scripts.Render("~/bundles/bootstrap")
-        @Scripts.Render("~/bundles/UserDefine")
-        @Styles.Render("~/bundles/css")
+        <script src="/Scripts/RequireJS/require.js" data-main="/Scripts/RequireJS/main"></script>
     </head>
     <body>
         @RenderBody()

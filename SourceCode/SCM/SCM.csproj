@@ -150,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Retailer\Scripts\SCM.Retailer.Main.js" />
-    <Content Include="Areas\Supplier\Scripts\SCM.Supplier.Main.js" />
+    <Content Include="Areas\Supplier\Scripts\Home\Main.js" />
     <Content Include="Content\css\bootstrap-datetimepicker.css" />
     <Content Include="Content\css\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\css\bootstrap-theme.css" />
@@ -237,9 +237,15 @@
     <Content Include="Scripts\Bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\JQuery\jquery-1.11.1.js" />
     <Content Include="Scripts\JQuery\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\RequireJS\css.js" />
+    <Content Include="Scripts\RequireJS\css.min.js" />
+    <Content Include="Scripts\RequireJS\domReady.js" />
+    <Content Include="Scripts\RequireJS\main.js" />
+    <Content Include="Scripts\RequireJS\require.js" />
+    <Content Include="Scripts\RequireJS\text.js" />
+    <Content Include="Areas\Supplier\Scripts\Signin\SigninView.js" />
     <Content Include="Scripts\Underscore\underscore-min.js" />
     <Content Include="Scripts\Underscore\underscore.js" />
-    <Content Include="Scripts\UserDefine\NameSpaceReg.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -251,6 +257,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Retailer\Templates\" />
+    <Folder Include="Areas\Supplier\Templates\Signin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
