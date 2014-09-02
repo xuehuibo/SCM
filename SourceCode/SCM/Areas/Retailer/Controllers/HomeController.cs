@@ -13,7 +13,7 @@ namespace SCM.Areas.Retailer.Controllers
         //
         // GET: /Retailer/Home/
 
-        public ActionResult Index()
+        public ViewResult Index()
         {
             return View();
         }

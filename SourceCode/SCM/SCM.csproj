@@ -137,6 +137,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Retailer\Controllers\HomeController.cs" />
     <Compile Include="Areas\Retailer\Controllers\SignController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\TokenController.cs" />
     <Compile Include="Areas\Retailer\RetailerAreaRegistration.cs" />
     <Compile Include="Areas\Supplier\Controllers\HomeController.cs" />
     <Compile Include="Areas\Supplier\Controllers\SignController.cs" />
@@ -146,11 +147,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ComMessage.cs" />
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Models\SupplierRequisition.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Retailer\Scripts\Home\SCM.Retailer.Main.js" />
-    <Content Include="Areas\Retailer\Scripts\Sign\SigninModel.js" />
     <Content Include="Areas\Retailer\Scripts\Sign\SigninView.js" />
     <Content Include="Areas\Supplier\Scripts\Home\Main.js" />
     <Content Include="Content\css\bootstrap-datetimepicker.css" />
@@ -260,6 +266,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Retailer\Templates\" />
     <Folder Include="Areas\Supplier\Templates\Signin\" />
+    <Folder Include="BLL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -304,6 +311,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Retailer\Views\Sign\Signin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{8a38eee3-c139-4361-a48b-a2791e7889c5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,10 +1,11 @@
-﻿define(['jquery','backbone'], function ($,Backbone) {
-    var signinView = Backbone.View.extend({
+﻿define(['jquery','backbone'], function ($,backbone) {
+    var signinView = backbone.View.extend({
         events: {
-            "click .btn": function () {
-                console.info("登录");
-            }
+            "click .btn": "signIn"
         },
+        signIn: function() {
+            
+        }
     });
     return signinView;
 });

@@ -1,5 +1,4 @@
-﻿//Namespace
-Namespace.register("SCM.Retailer.Main");
+﻿
 //NavbarUserPanelView
 SCM.Retailer.Main.NavbaSupplierPanelView = Backbone.View.extend({
     tagName: "ul",

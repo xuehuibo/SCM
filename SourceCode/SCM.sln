@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCM", "SCM\SCM.csproj", "{EDFD70AC-BF7D-4A08-896A-23670C7A2E15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{DE6A60F4-39E3-4D61-8836-2E4A4D2E803A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{8A38EEE3-C139-4361-A48B-A2791E7889C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{EDFD70AC-BF7D-4A08-896A-23670C7A2E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDFD70AC-BF7D-4A08-896A-23670C7A2E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDFD70AC-BF7D-4A08-896A-23670C7A2E15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE6A60F4-39E3-4D61-8836-2E4A4D2E803A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE6A60F4-39E3-4D61-8836-2E4A4D2E803A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE6A60F4-39E3-4D61-8836-2E4A4D2E803A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE6A60F4-39E3-4D61-8836-2E4A4D2E803A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A38EEE3-C139-4361-A48B-A2791E7889C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A38EEE3-C139-4361-A48B-A2791E7889C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A38EEE3-C139-4361-A48B-A2791E7889C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A38EEE3-C139-4361-A48B-A2791E7889C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Models
+﻿namespace SCM.Models
 {
     /// <summary>
     /// 供应商
     /// </summary>
     public class Supplier
     {
-        public int ID
+        public int Id
         {
             get;
             set;
@@ -77,7 +72,7 @@ namespace Models
             set;
         }
 
-        public string Tel2nd
+        public string Tel2Nd
         {
             get;
             set;

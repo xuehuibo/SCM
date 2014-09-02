@@ -11,11 +11,10 @@ namespace SCM.Areas.Retailer.Controllers
         //
         // GET: /Retailer/Sign/
 
-        public ActionResult Signin()
+        public ViewResult Signin()
         {
             ViewBag.Title = "零售商登录";
             return View();
         }
-
     }
 }
