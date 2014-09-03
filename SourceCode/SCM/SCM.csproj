@@ -158,6 +158,7 @@
   <ItemGroup>
     <Content Include="Areas\Retailer\Scripts\Home\SCM.Retailer.Main.js" />
     <Content Include="Areas\Retailer\Scripts\Sign\SigninView.js" />
+    <Content Include="Areas\Retailer\Scripts\Sign\TokenModel.js" />
     <Content Include="Areas\Supplier\Scripts\Home\Main.js" />
     <Content Include="Content\css\bootstrap-datetimepicker.css" />
     <Content Include="Content\css\bootstrap-datetimepicker.min.css" />

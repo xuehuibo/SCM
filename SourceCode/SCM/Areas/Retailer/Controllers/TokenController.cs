@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 using SCM.Models;
 
@@ -10,9 +11,25 @@ namespace SCM.Areas.Retailer.Controllers
 {
     public class TokenController : ApiController
     {
-        public ComMessage Post()
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        public ComMessage Put(string id,Token token)
+        {
+            var cookie = new HttpCookie("Retailer");
+            HttpContext.Current.Response.Cookies.Add(cookie);
+            return new ComMessage{Status = 1};
+        }
+
+        /// <summary>
+        /// 注销
+        /// </summary>
+        public void Delete(string id)
         {
             
         }
+
     }
 }
