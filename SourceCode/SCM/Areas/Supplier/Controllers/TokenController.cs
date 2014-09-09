@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Http;
 using SCM.Models;
 
-namespace SCM.Areas.Retailer.Controllers
+namespace SCM.Areas.Supplier.Controllers
 {
     public class TokenController : ApiController
     {
@@ -17,20 +17,11 @@ namespace SCM.Areas.Retailer.Controllers
         /// <param name="id"></param>
         /// <param name="token"></param>
         /// <returns></returns>
-        public ComMessage Put(string id,Token token)
+        public ComMessage Put(string id, Token token)
         {
             var cookie = new HttpCookie("Retailer");
             HttpContext.Current.Response.Cookies.Add(cookie);
-            return new ComMessage{Status = 1};
+            return new ComMessage { Status = 1 };
         }
-
-        /// <summary>
-        /// 注销
-        /// </summary>
-        public void Delete(string id)
-        {
-            
-        }
-
     }
 }

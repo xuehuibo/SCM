@@ -151,7 +151,7 @@ background-color: #428bca;
 * Main content
 */
 .main {
-padding: 60px;
+padding: 0px;
 }
 @media (min-width: 768px) {
 .main {
