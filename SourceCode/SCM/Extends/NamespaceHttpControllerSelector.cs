@@ -8,7 +8,7 @@ using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Dispatcher;
 
-namespace SCM
+namespace SCM.Extends
 {
     /// <summary>
     /// 此类用于扩展WebApi，使WebApi支持namespace

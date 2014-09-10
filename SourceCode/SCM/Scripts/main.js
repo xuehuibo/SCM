@@ -18,4 +18,4 @@
         }
     }
 });
-require(['jquery', 'underscore','bootstrap' ,'backbone']);
+require(['jquery', 'underscore', 'bootstrap', 'backbone', 'css!/Content/css/dashboard.css']);

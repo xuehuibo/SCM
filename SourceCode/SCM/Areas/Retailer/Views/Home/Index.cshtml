@@ -2,9 +2,9 @@
     ViewBag.Title = "SCM 供应链管理系统";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<script id="temp_NavbarRetailerPanelView" type="text/template">
+<script id="temp_NavbarSupplierPanelView" type="text/template">
     <li>
-        <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="欢迎您，xxxx用户"><span class="glyphicon glyphicon-user"></span>xxxxx用户</a>
+        <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="欢迎您，1级供应商"><span class="glyphicon glyphicon-user"></span>xxxxx有限公司</a>
     </li>
     <li>
         <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="您有1条未读消息">  <span class="glyphicon glyphicon glyphicon-envelope"></span>消息<span class="badge">1</span></a>
@@ -13,16 +13,16 @@
         <a class="btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="您有1件需要处理的任务">  <span class="glyphicon glyphicon glyphicon-list-alt"></span>任务<span class="badge">1</span></a>
     </li>
     <li class="dropdown">
-            <a class="btn-link" id="dLable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                快速通道
-                <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <li>
-                    <a class="btn-link">首页</a>
-                    <a class="btn-link">发布新品</a>
-                </li>
-            </ul>
+        <a class="btn-link" id="dLable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            快速通道
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li>
+                <a class="btn-link">首页</a>
+                <a class="btn-link">发布新品</a>
+            </li>
+        </ul>
     </li>
 
     <li>
@@ -31,54 +31,108 @@
 </script>
 
 <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-        <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="回到首页"> @ViewBag.Title<small>——零售商平台</small></a>
-    </div>
-    <div id="infoPanel" class="navbar-collapse collapse">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand btn-link hasToolTip" data-toggle="tooltip" data-placement="bottom" title="回到首页"> @ViewBag.Title<small>——零售商平台</small></a>
+        </div>
+        <div id="infoPanel" class="navbar-collapse collapse">
+        </div>
     </div>
 </div>
 
-<div id="container" class="container-fluid" style="padding-top: 50px;">
-    <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar  hidden-xs">
-            <ul class="nav nav-sidebar" id="menu">
-                <li>
-                    <a class="btn-link" data-toggle="collapse" data-target="#menu1">店铺维护</a>
-                    <ul id="menu1" class="collapse">
-                        <ol><a class="btn-link">区域划分</a></ol>
-                        <ol><a class="btn-link">店铺信息</a></ol>
-                    </ul>
-                </li>
-                <li>
-                    <a class="btn-link" data-toggle="collapse" data-target="#menu2">产品目录</a>
-                    <ul id="menu2" class="collapse">
-                        <ol><a class="btn-link">区域划分</a></ol>
-                        <ol><a class="btn-link">店铺信息</a></ol>
-                    </ul>
-                </li>
-                <li>
-                    <a class="btn-link">供应商维护</a>
-                </li>
-                <li>
-                    <a class="btn-link">采购管理</a>
-                </li>
-                <li>
-                    <a class="btn-link">单据查询</a>
-                </li>
-                <li>
-                    <a class="btn-link">公告管理</a>
-                </li>
-            </ul>
+<div id="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>公告.1</h1>
+                        <p>这里是公告面板。零售商向供应商发布公共消息。</p>
+                        <p>所有供应商都可以查看</p>
+                        <p><a role="button" href="/Supplier/Main/Test" class="btn btn-primary btn-lg">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>公告.2</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a role="button" href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>公告.3</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a role="button" href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <a class="left carousel-control" data-slide="prev" role="button" href="#myCarousel">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="right carousel-control" data-slide="next" role="button" href="#myCarousel">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" style="background-color: #eee;">
-            <h1 class="page-header">Dashboard</h1>
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/info-60-styled.png" />
+                <h2>企业信息</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/book-60-styled.png" />
+                <h2>产品目录</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/add-60-styled.png" />
+                <h2>发布新品</h2>
+            </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/clipboard-60-styled.png" />
+                <h2>订货单</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/document-60-styled.png" />
+                <h2>发货单</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/update-60-styled.png" />
+                <h2>退货单</h2>
+            </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/presentation-60-styled.png" />
+                <h2>调价单</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img class="btn-link img-rounded" style="width:62px;height:62px" src="~/Content/image/watch-60-styled.png" />
+                <h2>网上对账</h2>
+            </div>
         </div>
     </div>
 </div>

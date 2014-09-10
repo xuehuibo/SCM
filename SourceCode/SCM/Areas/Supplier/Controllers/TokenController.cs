@@ -19,7 +19,7 @@ namespace SCM.Areas.Supplier.Controllers
         /// <returns></returns>
         public ComMessage Put(string id, Token token)
         {
-            var cookie = new HttpCookie("Retailer");
+            var cookie = new HttpCookie("Supplier");
             HttpContext.Current.Response.Cookies.Add(cookie);
             return new ComMessage { Status = 1 };
         }
