@@ -1,0 +1,5 @@
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\bin\Release\DAL.dll
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\bin\Release\DAL.pdb
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\obj\Release\DAL.dll
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\obj\Release\DAL.pdb

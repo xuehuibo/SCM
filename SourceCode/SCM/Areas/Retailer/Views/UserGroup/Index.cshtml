@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h3>用户组管理</h3>
+    <hr/>
+    <table id="userGroupList" class="table">
+        <thead>
+            <tr>
+                <td colspan="5">
+                    条件过滤
+                </td>
+            </tr>
+            <tr>
+                <td class ="text-muted">用户组编码</td>
+                <td class="text-muted">用户组名称</td>
+                <td class="text-muted">用户组类型</td>
+                <td class="text-muted">状态</td>
+                <td class="text-muted">备注</td>
+            </tr>
+        </thead>
+        <tbody>
+                
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    分页
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script>
+    require(['/Areas/Retailer/Scripts/UserGroup/UserGroupListView.js',
+        '/Areas/Retailer/Scripts/UserGroup/UserGroupCollection.js',
+        'jquery', 'backbone'], function (UserGroupListView, UserGroupCollection) {
+        var userGroupListView = new UserGroupListView({
+            collection: new UserGroupCollection(),
+            el: '#userGroupList'
+        });
+    });
+</script>

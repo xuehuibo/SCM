@@ -31,26 +31,26 @@ namespace DAL.Interface
         /// 查询
         /// create by xuehuibo 2014-03-21
         /// </summary>
-        /// <param name="oracleString">sql语句</param>
+        /// <param name="commandString"></param>
         /// <param name="i"></param>
         /// <param name="paramArray"></param>
         /// <returns></returns>
-        DataTable Select(string oracleString, out int i, params IDbDataParameter[] paramArray);
+        DataTable Select(string commandString, out int i, params IDbDataParameter[] paramArray);
 
         /// <summary>
         /// 采用分页的查询
         /// </summary>
-        /// <param name="oracleString"></param>
+        /// <param name="commandString"></param>
         /// <param name="startRecord"></param>
         /// <param name="maxRecords"></param>
         /// <param name="i"></param>
         /// <param name="paramArray"></param>
         /// <returns></returns>
-        DataTable Select(string oracleString, int startRecord, int maxRecords, out int i, params IDbDataParameter[] paramArray);
+        DataTable Select(string commandString, int startRecord, int maxRecords, out int i, params IDbDataParameter[] paramArray);
 
-        DataSet Select(string oracleString, params IDbDataParameter[] paramArray);
+        DataSet Select(string commandString, params IDbDataParameter[] paramArray);
 
-        bool OpenReader(string oracleString, params IDbDataParameter[] paramArray);
+        bool OpenReader(string commandString, params IDbDataParameter[] paramArray);
 
         #endregion
 
@@ -72,7 +72,7 @@ namespace DAL.Interface
         #endregion
 
         #region execute
-        void Execute(string oracleString, out int i, params IDbDataParameter[] Params);
+        void Execute(string commandString, out int i, params IDbDataParameter[] Params);
         #endregion
 
         #region ParameterCreater

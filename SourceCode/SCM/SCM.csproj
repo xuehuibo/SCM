@@ -133,6 +133,10 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="Areas\Retailer\Controllers\UserGroupApiController.cs" />
+    <Compile Include="Areas\Retailer\Controllers\UserGroupController.cs" />
+    <Compile Include="BLL\UserGroupBll.cs" />
+    <Compile Include="Extends\JavaScriptLoader.cs" />
     <Compile Include="Extends\NamespaceHttpControllerSelector.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -156,12 +160,17 @@
     <Compile Include="Models\SupplierRequisition.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\UserGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Retailer\Scripts\Home\SCM.Retailer.Main.js" />
     <Content Include="Areas\Retailer\Scripts\Sign\SigninView.js" />
     <Content Include="Areas\Retailer\Scripts\Sign\TokenModel.js" />
+    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupCollection.js" />
+    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupItemView.js" />
+    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupListView.js" />
+    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupModel.js" />
     <Content Include="Areas\Supplier\Scripts\Home\Main.js" />
     <Content Include="Areas\Supplier\Scripts\Sign\TokenModel.js" />
     <Content Include="Content\css\bootstrap-datetimepicker.css" />
@@ -240,24 +249,21 @@
     <Content Include="Content\image\video-60-styled.png" />
     <Content Include="Content\image\wallet-60-styled.png" />
     <Content Include="Content\image\watch-60-styled.png" />
+    <Content Include="Content\templates\genericPagerTpl.html" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\backbone-min.js" />
     <Content Include="Scripts\backbone.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.zh-CN.js" />
     <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.11.1.js" />
-    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\genericPager.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\css.js" />
-    <Content Include="Scripts\css.min.js" />
     <Content Include="Scripts\domReady.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\text.js" />
     <Content Include="Areas\Supplier\Scripts\Sign\SigninView.js" />
-    <Content Include="Scripts\underscore-min.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -269,9 +275,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Retailer\Templates\" />
     <Folder Include="Areas\Supplier\Templates\Signin\" />
-    <Folder Include="BLL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -322,6 +326,15 @@
       <Project>{8a38eee3-c139-4361-a48b-a2791e7889c5}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Retailer\Views\UserGroup\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Retailer\Views\UserGroup\UserGroupItemTpl.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\SCM.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

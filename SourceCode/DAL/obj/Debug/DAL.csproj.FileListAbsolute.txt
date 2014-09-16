@@ -3,3 +3,8 @@ D:\GitWork\Web\SCM\SourceCode\DAL\bin\Debug\DAL.pdb
 D:\GitWork\Web\SCM\SourceCode\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\GitWork\Web\SCM\SourceCode\DAL\obj\Debug\DAL.dll
 D:\GitWork\Web\SCM\SourceCode\DAL\obj\Debug\DAL.pdb
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\bin\Debug\DAL.dll
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\bin\Debug\DAL.pdb
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\obj\Debug\DAL.dll
+E:\Documents\项目开发\Web\SCM\SourceCode\DAL\obj\Debug\DAL.pdb
