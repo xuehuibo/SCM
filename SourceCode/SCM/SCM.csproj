@@ -136,7 +136,7 @@
     <Compile Include="Areas\Retailer\Controllers\UserGroupApiController.cs" />
     <Compile Include="Areas\Retailer\Controllers\UserGroupController.cs" />
     <Compile Include="BLL\UserGroupBll.cs" />
-    <Compile Include="Extends\JavaScriptLoader.cs" />
+    <Compile Include="Extends\ControllerPlus.cs" />
     <Compile Include="Extends\NamespaceHttpControllerSelector.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -150,7 +150,7 @@
     <Compile Include="Areas\Supplier\SupplierAreaRegistration.cs" />
     <Compile Include="Attributes\AuthorizationAttribute.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Filters\ActionFilter.cs" />
+    <Compile Include="Extends\ActionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -257,6 +257,7 @@
     <Content Include="Scripts\bootstrap-datetimepicker.zh-CN.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\genericPager.js" />
+    <Content Include="Scripts\HttpStatusHandle.js" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\css.js" />
     <Content Include="Scripts\domReady.js" />

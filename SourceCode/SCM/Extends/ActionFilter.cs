@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Configuration;
-namespace SCM.Filters
+
+namespace SCM.Extends
 {
     [AttributeUsage(AttributeTargets.Class|AttributeTargets.Method,AllowMultiple=false)]
     public class ActionFilter : ActionFilterAttribute

@@ -1,12 +1,15 @@
 ﻿require.config({
     baseUrl:'/Scripts/',
     paths: {
-        'jquery': ['jquery'],
+/*        'jquery': ['jquery'],
         'backbone': ['backbone'],
         'underscore': ['underscore'],
-        'bootstrap': ['bootstrap']
+        'bootstrap': ['bootstrap']*/
     },
     shim: {
+        'jquery': {
+          exports:'$'  
+        },
         'underscore': {
             exports:'_'
         },

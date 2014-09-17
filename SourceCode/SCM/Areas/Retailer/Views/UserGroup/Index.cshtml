@@ -33,9 +33,11 @@
     </table>
 </div>
 <script>
-    require(['/Areas/Retailer/Scripts/UserGroup/UserGroupListView.js',
-        '/Areas/Retailer/Scripts/UserGroup/UserGroupCollection.js',
-        'jquery', 'backbone'], function (UserGroupListView, UserGroupCollection) {
+    require([
+        '/Retailer/UserGroup/LoadJs/UserGroupListView',
+        '/Retailer/UserGroup/LoadJs/UserGroupCollection',
+        'jquery','backbone'
+    ], function(UserGroupListView, UserGroupCollection) {
         var userGroupListView = new UserGroupListView({
             collection: new UserGroupCollection(),
             el: '#userGroupList'

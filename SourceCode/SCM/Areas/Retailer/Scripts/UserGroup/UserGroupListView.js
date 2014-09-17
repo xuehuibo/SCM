@@ -1,4 +1,6 @@
-﻿define(['/Areas/Retailer/Scripts/UserGroup/UserGroupItemView.js', 'jquery', 'backbone'], function (UserGroupItemView) {
+﻿define(['/Retailer/UserGroup/LoadJs/UserGroupItemView',
+    'HttpStatusHandle',
+    'jquery', 'backbone'], function (UserGroupItemView, HttpStatusHandle) {
     var UserGroupListView = Backbone.View.extend({
         initialize: function () {
             this.header = this.$("thead");
@@ -11,22 +13,10 @@
                 data: {
                     page:1
                 },
-                success:function(collection, rst) {
+                success: function (collection, rst) {
                 },
-                error:function(collection, rst) {
-                    switch (rst.status) {
-                    case 400:
-                        alert("系统异常");
-                        break;
-                    case 403:
-                        alert("没有权限访问");
-                        break;
-                    case 404:
-                        alert("无数据");
-                        break;
-                    default:
-                        alert("未知错误");
-                    }
+                error: function (collection, rst) {
+                    var ok = HttpStatusHandle(rst.status,'/Retailer');
                 }
             });
         },

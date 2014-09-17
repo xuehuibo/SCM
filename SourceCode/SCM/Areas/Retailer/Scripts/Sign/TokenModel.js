@@ -1,5 +1,5 @@
-﻿define(['jquery','backbone'],function($, backbone) {
-    var tokenModel = backbone.Model.extend({
+﻿define(['jquery', 'backbone'], function () {
+    var tokenModel = Backbone.Model.extend({
         defaults: {
             "SignId": null,
             "Password": null,

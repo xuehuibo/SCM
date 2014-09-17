@@ -1,4 +1,4 @@
-﻿define(['jquery', 'backbone'], function() {
+﻿define(['jquery', 'backbone'], function () {
     var UserGroupModel = Backbone.Model.extend({
         defaults: {
             'Id': null,

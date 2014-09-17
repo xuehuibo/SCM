@@ -16,7 +16,7 @@ namespace SCM.Areas.Retailer.Controllers
             var httpCookie = HttpContext.Current.Request.Cookies["Retailer"];
             if (httpCookie == null)
             {
-                throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.Forbidden));
+                throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.NonAuthoritativeInformation));
             }
             var tooken = httpCookie.Value;
             try
