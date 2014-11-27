@@ -1,4 +1,4 @@
-﻿define(['/Retailer/UserGroup/LoadJs/UserGroupItemView',
+﻿define(['./UserGroupItemView',
     'HttpStatusHandle',
     'jquery', 'backbone'], function (UserGroupItemView, HttpStatusHandle) {
     var UserGroupListView = Backbone.View.extend({

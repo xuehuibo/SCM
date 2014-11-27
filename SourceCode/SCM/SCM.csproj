@@ -41,6 +41,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Demo\1.CSharp\C.Component\D.DBUtilities\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="dotless.Core">
       <HintPath>..\packages\dotless.1.4.1.0\lib\dotless.Core.dll</HintPath>
     </Reference>
@@ -136,7 +140,6 @@
     <Compile Include="Areas\Retailer\Controllers\UserGroupApiController.cs" />
     <Compile Include="Areas\Retailer\Controllers\UserGroupController.cs" />
     <Compile Include="BLL\UserGroupBll.cs" />
-    <Compile Include="Extends\ControllerPlus.cs" />
     <Compile Include="Extends\NamespaceHttpControllerSelector.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -164,15 +167,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Retailer\Scripts\Home\SCM.Retailer.Main.js" />
-    <Content Include="Areas\Retailer\Scripts\Sign\SigninView.js" />
-    <Content Include="Areas\Retailer\Scripts\Sign\TokenModel.js" />
-    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupCollection.js" />
-    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupItemView.js" />
-    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupListView.js" />
-    <Content Include="Areas\Retailer\Scripts\UserGroup\UserGroupModel.js" />
-    <Content Include="Areas\Supplier\Scripts\Home\Main.js" />
-    <Content Include="Areas\Supplier\Scripts\Sign\TokenModel.js" />
+    <Content Include="Scripts\Retailer\Sign\SigninView.js" />
+    <Content Include="Scripts\Retailer\Sign\TokenModel.js" />
+    <Content Include="Scripts\Retailer\UserGroup\UserGroupCollection.js" />
+    <Content Include="Scripts\Retailer\UserGroup\UserGroupItemView.js" />
+    <Content Include="Scripts\Retailer\UserGroup\UserGroupListView.js" />
+    <Content Include="Scripts\Retailer\UserGroup\UserGroupModel.js" />
+    <Content Include="Scripts\Supplier\Home\Main.js" />
+    <Content Include="Scripts\Supplier\Sign\TokenModel.js" />
     <Content Include="Content\css\bootstrap-datetimepicker.css" />
     <Content Include="Content\css\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\css\bootstrap-theme.css" />
@@ -264,7 +266,7 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\text.js" />
-    <Content Include="Areas\Supplier\Scripts\Sign\SigninView.js" />
+    <Content Include="Scripts\Supplier\Sign\SigninView.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -276,7 +278,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Supplier\Templates\Signin\" />
+    <Folder Include="Scripts\Retailer\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -323,16 +325,10 @@
     <Content Include="Areas\Retailer\Views\Sign\Signin.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{8a38eee3-c139-4361-a48b-a2791e7889c5}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Areas\Retailer\Views\UserGroup\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Retailer\Views\UserGroup\UserGroupItemTpl.cshtml" />
+    <Content Include="Areas\Retailer\Views\UserGroup\UserGroupItemTpl.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\SCM.pubxml" />

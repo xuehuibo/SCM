@@ -1,4 +1,4 @@
-﻿define(['text!/Retailer/UserGroup/LoadTpl/UserGroupItemTpl', 'jquery', 'backbone'],
+﻿define(['text!/Retailer/Views/UserGroup/UserGroupItemTpl.html', 'jquery', 'backbone'],
     function (tpl) {
     var UserGroupItemView = Backbone.View.extend({
         tagName: 'tr',

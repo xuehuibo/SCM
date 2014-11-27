@@ -1,4 +1,4 @@
-﻿define(['/Retailer/Sign/LoadJs/TokenModel', 'jquery', 'backbone'], function (TokenModel) {
+﻿define(['./TokenModel', 'jquery', 'backbone'], function (TokenModel) {
     var signinView = Backbone.View.extend({
         events: {
             "click .btn": "signIn"

@@ -1,9 +1,8 @@
 ﻿using System.Web.Mvc;
-using SCM.Extends;
 
 namespace SCM.Areas.Retailer.Controllers
 {
-    public class SignController : ControllerPlus
+    public class SignController : Controller
     {
         //
         // GET: /Retailer/Sign/
